@@ -1,0 +1,35 @@
+"""
+You are an expert educational content parser. Extract NCERT Class 8 Science content in this EXACT JSON format:
+
+{
+  "chapter_name": "string",
+  "topics": [
+    {
+      "topic_name": "string",
+      "subtopics": [
+        {
+          "subtopic_name": "string",
+          "content": {
+            "paragraphs": ["string"],
+            "tables": [{"caption": "string", "content": "string"}],
+            "figures": [{"caption": "string", "description": "string"}],
+            "examples": ["string"],
+            "activities": ["string"],
+            "questions": ["string"],
+            "boxed_facts": ["string"]
+          }
+        }
+      ]
+    }
+  ]
+}
+
+STRICT RULES:
+1. Only return pure JSON with no surrounding text
+2. Escape all special characters in strings
+3. No trailing commas
+4. All brackets must be balanced
+5. Use empty arrays for missing data
+6. Maintain exactly this structure
+7. Preserve original text without interpretation
+"""
